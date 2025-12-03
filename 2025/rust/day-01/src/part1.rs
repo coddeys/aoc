@@ -1,5 +1,4 @@
 use nom::{bytes::complete::tag, branch::alt, character::complete::{self, line_ending}, multi::separated_list1, IResult, Parser};
-use tracing::info;
 
 #[tracing::instrument]
 pub fn process(input: &str) -> miette::Result<String> {
